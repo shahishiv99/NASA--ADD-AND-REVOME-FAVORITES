@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa -- Add and Remove Favorites</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="Loader">
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <div class="navigation-container">
+            <span class="background"></span>
+            <!-- Results Nav -->
+            <span id="resultsNav" class="navigation-items">
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPicture()">Load More</h3>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNasaPicture()">Load More NASA Images</h3>
+            </span>
+        </div>
+        <!-- Main Content -->
+        <div class="images-container">
+            <!-- <div class="card">
+                <a href="#" title="View Full Image" target="_blank">
+                    <img src="https://images-assets.nasa.gov/image/PIA00123/PIA00123~small.jpg" alt="NASA Picture"
+                        class="card-image-top">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Title of the Image</h5>
+                    <p class="clickable">Add to Favorites</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a numquam
+                        vitae voluptates omnis quis, consequuntur, totam voluptatum blanditiis excepturi aspernatur
+                        nesciunt, explicabo eos. Illo officiis voluptatem est earum sequi consectetur dicta molestiae
+                        magni quis enim corrupti dolor ullam, vitae dolorem quibusdam quas voluptates aliquid doloribus,
+                        ipsum eius accusantium expedita magnam odit. Explicabo ex vero esse animi iure? Ullam maiores,
+                        voluptates eum blanditiis voluptatem similique, vel repellendus rerum delectus quidem corporis
+                        officia impedit cumque quas voluptate cupiditate quod voluptatum consequuntur odit pariatur
+                        deserunt at iure eius modi? Atque, corporis! Vitae, eius earum eaque odio debitis totam
+                        consectetur maxime, dolorem adipisci commodi, est reprehenderit sed quidem temporibus esse.
+                        Error, pariatur? Necessitatibus officia ducimus non exercitationem at cum, dolor vitae aliquid
+                        et assumenda.
+                    </p>
+                    <small class="text-muted" hidden>
+                        <strong>12-01-2023</strong>
+                        <span>Copyright Info</span>
+
+                    </small>
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Save Confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>Added!</h1>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
